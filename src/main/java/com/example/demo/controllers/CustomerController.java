@@ -16,7 +16,7 @@ import com.example.demo.services.CustomerService;
 @RequestMapping("/customer")
 public class CustomerController {
     @Autowired
-    CustomerService customerService;
+    private CustomerService customerService;
 
     @GetMapping
     public ArrayList<Customer> getCustomers()

@@ -11,7 +11,7 @@ import com.example.demo.repositories.CustomerRepository;
 @Service
 public class CustomerService {
     @Autowired
-    CustomerRepository customerRepository;
+    private CustomerRepository customerRepository;
 
     public ArrayList<Customer> getCustomers()
     {
